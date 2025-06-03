@@ -1,12 +1,9 @@
 "use client";
 
-import { ChatInput } from "@components";
+import { ChatWindow } from "@modules";
 
 export default function Home() {
   return (
-    <>
-      Chat!
-      <ChatInput />
-    </>
+    <ChatWindow/>
   );
 }
