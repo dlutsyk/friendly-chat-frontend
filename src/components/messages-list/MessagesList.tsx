@@ -2,11 +2,23 @@ import { MessagesListItem } from "@components";
 
 const MessagesList = () => {
   return (
-    <div className="overflow-scroll">
+    <div className="h-[calc(100vh-148px)] overflow-y-scroll scroll-m-0">
       <MessagesListItem
         message="Hello, how are you? and how is your day going? Hope you are doing well!"
         sender="Alice"
         timestamp="10:00 AM"
+      />
+      <MessagesListItem
+        message="I'm good, thanks! How about you?"
+        sender="Bob"
+        timestamp="10:01 AM"
+        isUserMessage={true}
+      />
+      <MessagesListItem
+        message="I'm good, thanks! How about you?"
+        sender="Bob"
+        timestamp="10:01 AM"
+        isUserMessage={true}
       />
       <MessagesListItem
         message="I'm good, thanks! How about you?"
