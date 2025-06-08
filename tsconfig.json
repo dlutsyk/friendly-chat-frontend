@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,15 +23,39 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@ui": ["./src/ui/index"],
-      "@ui/*": ["./src/ui/*"],
-      "@utils": ["./src/utils/index"],
-      "@icons": ["./src/ui/icons/index"],
-      "@components": ["./src/components/index"],
-      "@modules": ["./src/modules/index"]
+      "@/*": [
+        "./*"
+      ],
+      "@ui": [
+        "./src/ui/index"
+      ],
+      "@ui/*": [
+        "./src/ui/*"
+      ],
+      "@icons/*": [
+        "./src/ui/icons/*"
+      ],
+      "@utils": [
+        "./src/utils/index"
+      ],
+      "@icons": [
+        "./src/ui/icons/index"
+      ],
+      "@components": [
+        "./src/components/index"
+      ],
+      "@modules": [
+        "./src/modules/index"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

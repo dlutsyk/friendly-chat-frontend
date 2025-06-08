@@ -30,11 +30,12 @@ const MessagesList = () => {
         message="I'm good, thanks! How about you?"
         sender="Alice"
         timestamp="10:02 AM"
-      /><MessagesListItem
-      message="Hello, how are you?"
-      sender="Alice"
-      timestamp="10:00 AM"
-    />
+      />
+      <MessagesListItem
+        message="Hello, how are you?"
+        sender="Alice"
+        timestamp="10:00 AM"
+      />
       <MessagesListItem
         message="I'm good, thanks! How about you?"
         sender="Bob"
@@ -45,11 +46,12 @@ const MessagesList = () => {
         message="Doing well, just working on some code."
         sender="Alice"
         timestamp="10:02 AM"
-      /><MessagesListItem
-      message="Hello, how are you?"
-      sender="Alice"
-      timestamp="10:00 AM"
-    />
+      />
+      <MessagesListItem
+        message="Hello, how are you?"
+        sender="Alice"
+        timestamp="10:00 AM"
+      />
       <MessagesListItem
         message="I'm good, thanks! How about you?"
         sender="Bob"
@@ -60,11 +62,12 @@ const MessagesList = () => {
         message="Doing well, just working on some code."
         sender="Alice"
         timestamp="10:02 AM"
-      /><MessagesListItem
-      message="Hello, how are you?"
-      sender="Alice"
-      timestamp="10:00 AM"
-    />
+      />
+      <MessagesListItem
+        message="Hello, how are you?"
+        sender="Alice"
+        timestamp="10:00 AM"
+      />
       <MessagesListItem
         message="I'm good, thanks! How about you?"
         sender="Bob"
@@ -75,11 +78,12 @@ const MessagesList = () => {
         message="Doing well, just working on some code."
         sender="Alice"
         timestamp="10:02 AM"
-      /><MessagesListItem
-      message="Hello, how are you?"
-      sender="Alice"
-      timestamp="10:00 AM"
-    />
+      />
+      <MessagesListItem
+        message="Hello, how are you?"
+        sender="Alice"
+        timestamp="10:00 AM"
+      />
       <MessagesListItem
         message="I'm good, thanks! How about you?"
         sender="Bob"

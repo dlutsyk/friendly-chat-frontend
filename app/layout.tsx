@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../src/styles/index.css";
-import MobileHeader from "@/src/components/MobileHeader";
+import { MobileHeader } from "@components";
 
 export const metadata: Metadata = {
   title: "Friendly Chat",
