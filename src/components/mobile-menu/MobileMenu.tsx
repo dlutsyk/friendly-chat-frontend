@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
+import { Cross1Icon, HamburgerMenuIcon, GearIcon, ExitIcon } from "@radix-ui/react-icons";
 import { Logo } from "@ui";
+import Link from "next/link";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -24,20 +25,32 @@ const MobileMenu = () => {
           className="fixed top-0 left-0 h-full bg-gray-100 z-50 p-4 shadow-lg flex flex-col w-[280px] max-w-full rounded-r-lg transition-transform transform translate-x-0"
         >
           <Dialog.Title/>
-          <Logo caption={'Hi, Unknown Friend'}/>
-          <button
-            onClick={() => setOpen(false)}
-            className="absolute top-4 right-4 p-1 rounded-full cursor-pointer"
-          >
-            <Cross1Icon width={20} height={20}/>
-          </button>
-          <div className="p-6">
-            {/* Add your menu items here */}
+          <div className="flex flex-col justify-between h-full">
+            <div className="flex items-center justify-between">
+              <Logo caption={'Hi, Unknown Friend'}/>
+              <button
+                onClick={() => setOpen(false)}
+                className="cursor-pointer w-[32px] h-[32px]"
+              >
+                <Cross1Icon width={24} height={24}/>
+              </button>
+            </div>
+            <div className="flex flex-col gap-4 mt-4">
+              <Link className="flex gap-1" href="/settings" onClick={() => setOpen(false)}>
+                <GearIcon width={24} height={24}/> Settings
+              </Link>
+              <Link
+                className="flex gap-1 items-center bg-black text-white p-3 rounded-lg"
+                href="/logout"
+                onClick={() => setOpen(false)}
+              >
+                <ExitIcon width={18} height={18}/> Logout
+              </Link>
+            </div>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
-  
   );
 };
 
