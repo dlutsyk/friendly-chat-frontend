@@ -5,7 +5,7 @@ const ChatInput = () => {
     <div
       className="flex gap-4 justify-around fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-t-gray-200 shadow-md">
       <input
-        className="flex-grow px-2 border rounded"
+        className="flex-grow px-2 border rounded border-gray-300"
         type="text" placeholder="Type your message here..."
       />
       <button
