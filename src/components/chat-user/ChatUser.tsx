@@ -1,10 +1,6 @@
 import React from "react";
 
-enum UserStatus {
-  ACTIVE = "active",
-  AWAY = "away",
-  INACTIVE = "inactive"
-}
+type UserStatus = "active" | "away" | "inactive";
 
 type User = {
   id: number;
